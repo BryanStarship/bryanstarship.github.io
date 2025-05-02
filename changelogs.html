@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog WolfBot</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .version {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .version h2 {
+            margin: 0 0 10px;
+            color: #3498db;
+            font-size: 1.5em;
+        }
+        .version ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .version ul li {
+            margin-bottom: 5px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .version h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Changelog WolfBot</h1>
+
+        <div class="version">
+            <h2>V1.0.0</h2>
+            <ul>
+                <li>Création de WolfBot</li>
+                <li>Création des commandes /z, /rp, /issues, /sorcière, /régime, !r, !ping, /m, /rage</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.0.0</h2>
+            <ul>
+                <li>Passage du language du code de WolfBot à python</li>
+                <li>Changement d'hébergeur</li>
+                <li>Code de démarrage du bot refait à zéro</li>
+                <li>Code des commandes /z, /rp, /issues, /sorcière, /régime, !r, !ping, /m, /rage refait à 100%</li>
+                <li>Ajout de la possibilité d'indiquer une durée précise pour /rp</li>
+                <li>Réfection des menus des commandes /issues, /m et /régime</li>
+                <li>Ajout de plus de détails dans !ping</li>
+                <li>Ajout d'un message d'alerte de redémarrage du bot</li>
+                <li>Modifications mineures dans les textes des commandes /z, !r et /rp</li>
+                <li>Correction de bugs et amélioration de la stabilité</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.1.0</h2>
+            <ul>
+                <li>Retrait de l'obligation d'utiliser l'option "raison" de la commande /rp</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.1.1</h2>
+            <ul>
+                <li>Correction du bug "L'application ne répond pas" avec la commande /rp lorsqu'une mauvaise durée était indiquée</li>
+                <li>Correction d'erreurs dans les textes de la commande /issues</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.2.0</h2>
+            <ul>
+                <li>Ajout d'un système d'enregistrement des rappels de la commande /rp qui permet au bot d'exécuter les rappels même après un redémarrage</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.3.0</h2>
+            <ul>
+                <li>Modifications du système d'enregistrement des rappels de la commande /rp</li>
+                <li>Ajout de la commande "/admin", réservée uniquement aux Administrateurs</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.3.1</h2>
+            <ul>
+                <li>Correction d'erreurs dans les "custom_id" de la commande /issues</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.3.2</h2>
+            <ul>
+                <li>Modifications des durées de certaines altérations de la commande /issues</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.4.0</h2>
+            <ul>
+                <li>Modifications mineures du fonctionnement de la commande /z</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.5.0</h2>
+            <ul>
+                <li>Ajout des commandes "/lieux" et "/mes_lieux", qui permet de gérer ses lieux visités</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.6.0</h2>
+            <ul>
+                <li>Ajout de la fonctionnalité de stopper les rappels des commandes /z et !r</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.7.0</h2>
+            <ul>
+                <li>Ajout de la commande "/regen", qui vous permet de créer un rappel lorsque votre énergie est restaurée, selon les informations données</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.8.0</h2>
+            <ul>
+                <li>Ajout de la commande "!i", qui отмечать permet de créer un rappel de 18 secondes pour l'île</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.9.0</h2>
+            <ul>
+                <li>Ajout de la commande "!paires", qui vous permet de jouer à un jeu de paires</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.10.0</h2>
+            <ul>
+                <li>Ajout de la commande "!puissance4", qui vous permet de jouer à un Puissance 4</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.11.0</h2>
+            <ul>
+                <li>Ajout de la possibilité de supprimer un lieu précis dans la commande "/mes_lieux"</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.12.0</h2>
+            <ul>
+                <li>Ajout de la possibilité de jouer contre une IA au Puissance 4</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.13.0</h2>
+            <ul>
+                <li>Modification du système d'autorisation des utilisateurs</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.14.0</h2>
+            <ul>
+                <li>Ajout de la possibilité de gérer deux listes avec les commandes "/lieux" et "/mes_lieux"</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.15.0</h2>
+            <ul>
+                <li>Ajout des caractéristiques des familiers dans la commande "/régime"</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.16.0</h2>
+            <ul>
+                <li>Ajout d'une Nouvelle commande "/pets" pour les caractéristiques des familiers et rétablissement de l'ancienne commande "/régime"</li>
+            </ul>
+        </div>
+
+        <div class="version">
+            <h2>V2.16.1</h2>
+            <ul>
+                <li>Correction de l'erreur "Échec de l'interaction" dans la commande "/puissance4"</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
