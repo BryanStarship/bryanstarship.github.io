@@ -3,316 +3,625 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog WolfBot</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
-        }
-        .version {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 4px solid #3498db;
-            background-color: #f9f9f9;
-            border-radius: 4px;
-        }
-        .version h2 {
-            margin: 0 0 10px;
-            color: #3498db;
-            font-size: 1.5em;
-        }
-        .version ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin: 0;
-        }
-        .version ul li {
-            margin-bottom: 5px;
-        }
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            .version h2 {
-                font-size: 1.3em;
-            }
-        }
-    </style>
+    <title>Changelogs — WolfBot</title>
+    <meta name="description" content="L'historique complet des mises à jour de WolfBot, le bot Discord compagnon de Crownicles.">
+    <meta name="theme-color" content="#ffd67f">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WolfBot">
+    <meta property="og:title" content="Changelogs WolfBot">
+    <meta property="og:description" content="Toutes les évolutions de WolfBot, version par version.">
+    <meta property="og:url" content="https://bryanstarship.github.io/changelogs.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐺</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Changelog WolfBot</h1>
-
-        <div class="version">
-            <h2>V1.0.0</h2>
-            <ul>
-                <li>Création de WolfBot</li>
-                <li>Création des commandes /z, /rp, /issues, /sorcière, /régime, !r, !ping, /m, /rage</li>
-            </ul>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">🐺</span>WolfBot</a>
+            <nav class="site-nav" aria-label="Navigation principale">
+                <a href="./">Accueil</a>
+                <a href="changelogs.html" aria-current="page">Changelogs</a>
+                <a href="2.html">Conditions</a>
+                <a href="1.html">Confidentialité</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="version">
-            <h2>V2.0.0</h2>
-            <ul>
-                <li>Passage du language du code de WolfBot à python</li>
-                <li>Changement d'hébergeur</li>
-                <li>Code de démarrage du bot refait à zéro</li>
-                <li>Code des commandes /z, /rp, /issues, /sorcière, /régime, !r, !ping, /m, /rage refait à 100%</li>
-                <li>Ajout de la possibilité d'indiquer une durée précise pour /rp</li>
-                <li>Réfection des menus des commandes /issues, /m et /régime</li>
-                <li>Ajout de plus de détails dans !ping</li>
-                <li>Ajout d'un message d'alerte de redémarrage du bot</li>
-                <li>Modifications mineures dans les textes des commandes /z, !r et /rp</li>
-                <li>Correction de bugs et amélioration de la stabilité</li>
-            </ul>
-        </div>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="pill">📜 Historique des versions</span>
+                <h1>Changelogs</h1>
+                <p class="lead">Toutes les évolutions de WolfBot, de la toute première version à aujourd'hui. Les versions les plus récentes sont en haut.</p>
+                <div class="stats" aria-live="polite">
+                    <span class="stat">Dernière version&nbsp;: <strong class="ver" data-stat="latest">—</strong></span>
+                    <span class="stat"><strong data-stat="count">—</strong> versions publiées</span>
+                    <span class="stat"><strong data-stat="changes">—</strong> changements</span>
+                </div>
+            </div>
+        </section>
 
-        <div class="version">
-            <h2>V2.1.0</h2>
-            <ul>
-                <li>Retrait de l'obligation d'utiliser l'option "raison" de la commande /rp</li>
-            </ul>
-        </div>
-
-        <div class="version">
-            <h2>V2.1.1</h2>
-            <ul>
-                <li>Correction du bug "L'application ne répond pas" avec la commande /rp lorsqu'une mauvaise durée était indiquée</li>
-                <li>Correction d'erreurs dans les textes de la commande /issues</li>
-            </ul>
-        </div>
-
-        <div class="version">
-            <h2>V2.2.0</h2>
-            <ul>
-                <li>Ajout d'un système d'enregistrement des rappels de la commande /rp qui permet au bot d'exécuter les rappels même après un redémarrage</li>
-            </ul>
+        <div class="toolbar">
+            <div class="container">
+                <label class="search">
+                    <span class="sr-only">Rechercher dans les changelogs</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input type="search" id="search" placeholder="Rechercher une commande, une version…" autocomplete="off">
+                </label>
+                <div class="filters" role="group" aria-label="Filtrer par type de changement">
+                    <button class="chip" type="button" data-filter="all" aria-pressed="true">Tout</button>
+                    <button class="chip" type="button" data-filter="ajout" aria-pressed="false">Ajouts</button>
+                    <button class="chip" type="button" data-filter="modification" aria-pressed="false">Modifications</button>
+                    <button class="chip" type="button" data-filter="correction" aria-pressed="false">Corrections</button>
+                    <button class="chip" type="button" data-filter="suppression" aria-pressed="false">Suppressions</button>
+                </div>
+            </div>
         </div>
 
-        <div class="version">
-            <h2>V2.3.0</h2>
-            <ul>
-                <li>Modifications du système d'enregistrement des rappels de la commande /rp</li>
-                <li>Ajout de la commande "/admin", réservée uniquement aux Administrateurs</li>
-            </ul>
-        </div>
+        <div class="container changelog-layout">
+            <nav class="version-index" id="version-index" aria-label="Index des versions"></nav>
 
-        <div class="version">
-            <h2>V2.3.1</h2>
-            <ul>
-                <li>Correction d'erreurs dans les "custom_id" de la commande /issues</li>
-            </ul>
-        </div>
+            <div id="changelog">
+                <!--
+                    AJOUTER UNE VERSION
+                    Copier un bloc <article class="release"> tout en haut de la bonne section « Version X »
+                    (la plus récente en premier). L'id suit le format v3-7-1 pour la version 3.7.1.
+                    Types de lignes (attribut data-type) : ajout, modification, correction, suppression.
+                    L'accueil, les statistiques et l'index se mettent à jour automatiquement.
 
-        <div class="version">
-            <h2>V2.3.2</h2>
-            <ul>
-                <li>Modifications des durées de certaines altérations de la commande /issues</li>
-            </ul>
-        </div>
+                    <article class="release" id="v3-7-1">
+                        <header class="release-head">
+                            <h3><a href="#v3-7-1">V3.7.1</a></h3>
+                            <time datetime="2026-10-09">9 octobre 2026</time>
+                        </header>
+                        <ul>
+                            <li data-type="ajout">Description du changement.</li>
+                        </ul>
+                    </article>
+                -->
 
-        <div class="version">
-            <h2>V2.4.0</h2>
-            <ul>
-                <li>Modifications mineures du fonctionnement de la commande /z</li>
-            </ul>
-        </div>
+                <section class="major" id="version-3" aria-labelledby="version-3-title">
+                    <h2 class="major-title" id="version-3-title">Version 3 <small>Le menu /wolfbot</small></h2>
+                    <p class="major-desc">Refonte autour du menu principal /wolfbot et des données du jeu Crownicles. Les notes détaillées des versions 3.0.0 à 3.6.10 n'ont pas été publiées&nbsp;: l'entrée V3.6.11 résume l'état du bot à cette version.</p>
+                    <div class="timeline">
+                        <article class="release" id="v3-7-0">
+                            <header class="release-head">
+                                <h3><a href="#v3-7-0">V3.7.0</a></h3>
+                                <time datetime="2026-10-09">9 octobre 2026</time>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">/rp accepte un lien vers un message /jardin de Crownicles et crée un rappel pour chaque parcelle en cours de pousse. Redonner un lien met à jour les rappels existants au lieu d'en créer de nouveaux.</li>
+                                <li data-type="ajout">Sorcière&nbsp;: nouveau bouton « Lien Crownicles » pour coller le lien de votre rencontre et afficher directement les infos de chaque choix proposé.</li>
+                                <li data-type="ajout">Familiers&nbsp;: chaque fiche affiche les terrains d'expédition adorés et détestés, avec une pagination par rareté.</li>
+                                <li data-type="ajout">Événements&nbsp;: affichage des conditions d'apparition des choix, dont le lieu d'origine requis pour « Repartir par où vous êtes venu » chez l'Ermite (Crownicles 6.0.4).</li>
+                                <li data-type="ajout">Suivi automatique du statut de Discord&nbsp;: les incidents publiés sur discordstatus.com sont relayés dans un salon dédié, traduits en français.</li>
+                                <li data-type="modification">Expéditions&nbsp;: calculateur aligné sur le code de Crownicles 6.0.4 (pénalités calculées sur la durée réelle, maximum de jetons incluant le bonus aléatoire, arrondi des récompenses identique au jeu).</li>
+                                <li data-type="modification">/rp_manage affiche désormais tous vos rappels, 5 par page.</li>
+                                <li data-type="modification">Les boutons de tous les écrans se désactivent après 5 minutes d'inactivité.</li>
+                                <li data-type="modification">/wolfbot retente automatiquement l'envoi du menu en cas de coupure réseau passagère.</li>
+                                <li data-type="correction">Correction d'un plantage à l'expiration des écrans Familiers ouverts depuis le menu principal.</li>
+                                <li data-type="correction">Correction d'un message d'erreur vide lorsque l'envoi du menu /wolfbot dépassait le délai réseau.</li>
+                                <li data-type="correction">Le bot ne relance plus sa séquence de démarrage (rechargement des modules, annonce de version) à chaque reconnexion à Discord.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.5.0</h2>
-            <ul>
-                <li>Ajout des commandes "/lieux" et "/mes_lieux", qui permet de gérer ses lieux visités</li>
-            </ul>
-        </div>
+                        <article class="release" id="v3-6-11">
+                            <header class="release-head">
+                                <h3><a href="#v3-6-11">V3.6.11</a></h3>
+                                <time datetime="2026-08-29">29 août 2026</time>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Menu principal /wolfbot qui regroupe tous les outils du bot, dont les anciens modules (événements, familiers, sorcière, rage…).</li>
+                                <li data-type="ajout">Répertoires basés sur les données de Crownicles&nbsp;: missions, événements, recettes et graines, matériaux, familiers, sorcière, îles PVE, carte et temps de trajet, Moltiar.</li>
+                                <li data-type="ajout">Calculateurs&nbsp;: forge (amélioration, enchantements, ferraillage), prédictions du marché, expéditions de familiers et assistance personnalisée.</li>
+                                <li data-type="ajout">Menu des mini-jeux /jeux (Puissance 4 et Jeu des Paires) et gestion des rappels en cours avec /rp_manage.</li>
+                                <li data-type="ajout">Matériaux&nbsp;: source ferrailleur dans la fiche de chaque matériau, avec la quantité obtenue et la liste complète des équipements qui le donnent.</li>
+                                <li data-type="ajout">Événements&nbsp;: recherche d'un lieu par son nom.</li>
+                                <li data-type="ajout">Carte&nbsp;: biome des mini-événements affiché pour chaque lieu.</li>
+                                <li data-type="ajout">Ajout de l'Oursin (familier n°&nbsp;103, Crownicles 6.0.4).</li>
+                                <li data-type="modification">L'annonce de mise à jour n'est publiée que lorsque la version change réellement.</li>
+                                <li data-type="modification">Les messages de redémarrage et d'arrêt du bot ne sont plus visibles que par l'administrateur.</li>
+                                <li data-type="correction">Correction du calcul de probabilité des mini-événements par matériau.</li>
+                                <li data-type="correction">Correction de l'erreur d'interaction lors du changement de version via /admin.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
 
-        <div class="version">
-            <h2>V2.6.0</h2>
-            <ul>
-                <li>Ajout de la fonctionnalité de stopper les rappels des commandes /z et !r</li>
-            </ul>
-        </div>
+                <section class="major" id="version-2" aria-labelledby="version-2-title">
+                    <h2 class="major-title" id="version-2-title">Version 2 <small>Réécriture en Python</small></h2>
+                    <p class="major-desc">Le bot est entièrement réécrit en Python et change d'hébergeur&nbsp;; les rappels deviennent persistants et les mini-jeux font leur apparition.</p>
+                    <div class="timeline">
+                        <article class="release" id="v2-21-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-21-0">V2.21.0</a></h3>
+                                <time datetime="2025-07-15">15 juillet 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="suppression">Suppression du jeu « Wordle ».</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.7.0</h2>
-            <ul>
-                <li>Ajout de la commande "/regen", qui vous permet de créer un rappel lorsque votre énergie est restaurée, selon les informations données</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-20-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-20-0">V2.20.0</a></h3>
+                                <time datetime="2025-06-22">22 juin 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la possibilité de jouer au jeu « Wordle ».</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.8.0</h2>
-            <ul>
-                <li>Ajout de la commande "!i", qui permet de créer un rappel de 18 secondes pour l'île</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-19-5">
+                            <header class="release-head">
+                                <h3><a href="#v2-19-5">V2.19.5</a></h3>
+                                <time datetime="2025-05-19">19 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction d'une erreur de rareté d'un familier dans la commande /pets.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.9.0</h2>
-            <ul>
-                <li>Ajout de la commande "!paires", qui vous permet de jouer à un jeu de paires</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-19-4">
+                            <header class="release-head">
+                                <h3><a href="#v2-19-4">V2.19.4</a></h3>
+                                <time datetime="2025-05-04">4 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction d'un bug qui ne supprimait pas le bouton « Annuler » du rappel de la commande /z une fois le rappel exécuté.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.10.0</h2>
-            <ul>
-                <li>Ajout de la commande "!puissance4", qui vous permet de jouer à un Puissance 4</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-19-3">
+                            <header class="release-head">
+                                <h3><a href="#v2-19-3">V2.19.3</a></h3>
+                                <time datetime="2025-05-04">4 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction de l'accord de « heure » et « minute » selon la durée dans la commande /regen.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.11.0</h2>
-            <ul>
-                <li>Ajout de la possibilité de supprimer un lieu précis dans la commande "/mes_lieux"</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-19-2">
+                            <header class="release-head">
+                                <h3><a href="#v2-19-2">V2.19.2</a></h3>
+                                <time datetime="2025-05-03">3 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction d'un bug qui bloquait la bonne exécution de la commande /z.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.12.0</h2>
-            <ul>
-                <li>Ajout de la possibilité de jouer contre une IA au Puissance 4</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-19-1">
+                            <header class="release-head">
+                                <h3><a href="#v2-19-1">V2.19.1</a></h3>
+                                <time datetime="2025-05-03">3 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction d'un bug de la commande /z qui affichait une mauvaise durée après un redémarrage du bot.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.13.0</h2>
-            <ul>
-                <li>Modification du système d'autorisation des utilisateurs</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-19-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-19-0">V2.19.0</a></h3>
+                                <time datetime="2025-05-03">3 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de l'enregistrement des rappels de /regen, qui permet au rappel de s'exécuter même après un redémarrage du bot.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.14.0</h2>
-            <ul>
-                <li>Ajout de la possibilité de gérer deux listes avec les commandes "/lieux" et "/mes_lieux"</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-18-1">
+                            <header class="release-head">
+                                <h3><a href="#v2-18-1">V2.18.1</a></h3>
+                                <time datetime="2025-05-03">3 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction de différents éléments dans la commande /pets.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.15.0</h2>
-            <ul>
-                <li>Ajout des caractéristiques des familiers dans la commande "/régime"</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-18-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-18-0">V2.18.0</a></h3>
+                                <time datetime="2025-05-03">3 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="modification">La réaction d'annulation de la commande /z devient un bouton.</li>
+                                <li data-type="ajout">Enregistrement du rappel de /z, qui s'exécute désormais même après un redémarrage du bot.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.16.0</h2>
-            <ul>
-                <li>Ajout d'une Nouvelle commande "/pets" pour les caractéristiques des familiers et rétablissement de l'ancienne commande "/régime"</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-17-1">
+                            <header class="release-head">
+                                <h3><a href="#v2-17-1">V2.17.1</a></h3>
+                                <time datetime="2025-05-03">3 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction d'un bug où le message « Création de la partie… Choisissez un mode de jeu » ne se supprimait pas au lancement d'une partie de Puissance 4.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.16.1</h2>
-            <ul>
-                <li>Correction de l'erreur "Échec de l'interaction" dans la commande "!puissance4"</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-17-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-17-0">V2.17.0</a></h3>
+                                <time datetime="2025-05-02">2 mai 2025</time>
+                            </header>
+                            <ul>
+                                <li data-type="modification">Déplacement des changelogs de WolfBot de la commande /admin vers le site du bot.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.17.0</h2>
-            <ul>
-                <li>Déplacement des changelogs de WolfBot de la commande "/admin" sur le site du bot</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-16-1">
+                            <header class="release-head">
+                                <h3><a href="#v2-16-1">V2.16.1</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction de l'erreur « Échec de l'interaction » dans la commande /puissance4.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.17.1</h2>
-            <ul>
-                <li>Correction d'un bug lorsqu'une partie de puissance 4 était lancé, le message "Création de la partie... Choisissez un mode de jeu " ne se supprimais pas.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-16-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-16-0">V2.16.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout d'une nouvelle commande /pets pour les caractéristiques des familiers.</li>
+                                <li data-type="modification">Rétablissement de l'ancienne commande /régime.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.18.0</h2>
-            <ul>
-                <li>Modification de la commande /z, avec la conversion de la réaction pour l'annulation en bouton et l'ajout de l'enregistrement du rappel, qui permet son exécution même après le redémarrage du bot.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-15-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-15-0">V2.15.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout des caractéristiques des familiers dans la commande /régime.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.18.1</h2>
-            <ul>
-                <li>Correction de différents éléments dans la commande /pets.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-14-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-14-0">V2.14.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la possibilité de gérer deux listes avec les commandes /lieux et /mes_lieux.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.19.0</h2>
-            <ul>
-                <li>Ajout de l'enregistrement des rappels de /regen, qui permet au rappel de s'exécuter même après un redémarrage du bot.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-13-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-13-0">V2.13.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="modification">Modification du système d'autorisation des utilisateurs.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.19.1</h2>
-            <ul>
-                <li>Correction d'un bug dans la commande /z qui avait une mauvaise durée après un redémarrage du bot.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-12-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-12-0">V2.12.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la possibilité de jouer contre une IA au Puissance 4.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.19.2</h2>
-            <ul>
-                <li>Correction d'un bug qui bloquait la bonne exécution de la commande /z.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-11-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-11-0">V2.11.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la possibilité de supprimer un lieu précis dans la commande /mes_lieux.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.19.3</h2>
-            <ul>
-                <li>Correction d'une erreur d'écriture pour "heure" et "minute" dans la commande /regen, qui étaient mal accordés selon la durée.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-10-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-10-0">V2.10.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la commande !puissance4, qui permet de jouer au Puissance 4.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.19.4</h2>
-            <ul>
-                <li>Correction d'un bug qui ne supprimait pas le bouton "Annuler" du rappel de la commande /z après que le rappel soit exécuté.</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-9-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-9-0">V2.9.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la commande !paires, qui permet de jouer à un jeu de paires.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.19.5</h2>
-            <ul>
-                <li>Correction d'une erreur de rareté d'un familier dans la commande /pets.</li>
-            </ul>
-        </div>
-        
-        <div class="version">
-            <h2>V2.20.0</h2>
-            <ul>
-                <li>Ajout de la possibilité de jouer au jeu "Wordle".</li>
-            </ul>
-        </div>
+                        <article class="release" id="v2-8-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-8-0">V2.8.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la commande !i, qui crée un rappel de 18 secondes pour l'île.</li>
+                            </ul>
+                        </article>
 
-        <div class="version">
-            <h2>V2.21.0</h2>
-            <ul>
-                <li>Supression du jeu "Wordle".</li>
-            </ul>
+                        <article class="release" id="v2-7-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-7-0">V2.7.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la commande /regen, qui crée un rappel lorsque votre énergie est restaurée, selon les informations données.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-6-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-6-0">V2.6.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout de la possibilité d'arrêter les rappels des commandes /z et !r.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-5-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-5-0">V2.5.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout des commandes /lieux et /mes_lieux, qui permettent de gérer ses lieux visités.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-4-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-4-0">V2.4.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="modification">Modifications mineures du fonctionnement de la commande /z.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-3-2">
+                            <header class="release-head">
+                                <h3><a href="#v2-3-2">V2.3.2</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="modification">Modification des durées de certaines altérations de la commande /issues.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-3-1">
+                            <header class="release-head">
+                                <h3><a href="#v2-3-1">V2.3.1</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction d'erreurs dans les « custom_id » de la commande /issues.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-3-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-3-0">V2.3.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="modification">Modification du système d'enregistrement des rappels de la commande /rp.</li>
+                                <li data-type="ajout">Ajout de la commande /admin, réservée aux administrateurs.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-2-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-2-0">V2.2.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Ajout d'un système d'enregistrement des rappels de la commande /rp, qui permet au bot d'exécuter les rappels même après un redémarrage.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-1-1">
+                            <header class="release-head">
+                                <h3><a href="#v2-1-1">V2.1.1</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="correction">Correction du bug « L'application ne répond pas » avec la commande /rp lorsqu'une mauvaise durée était indiquée.</li>
+                                <li data-type="correction">Correction d'erreurs dans les textes de la commande /issues.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-1-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-1-0">V2.1.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="modification">L'option « raison » de la commande /rp n'est plus obligatoire.</li>
+                            </ul>
+                        </article>
+
+                        <article class="release" id="v2-0-0">
+                            <header class="release-head">
+                                <h3><a href="#v2-0-0">V2.0.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="modification">Passage du code de WolfBot au langage Python.</li>
+                                <li data-type="modification">Changement d'hébergeur.</li>
+                                <li data-type="modification">Code de démarrage du bot refait à zéro.</li>
+                                <li data-type="modification">Code des commandes /z, /rp, /issues, /sorcière, /régime, !r, !ping, /m et /rage refait à 100&nbsp;%.</li>
+                                <li data-type="ajout">Ajout de la possibilité d'indiquer une durée précise pour /rp.</li>
+                                <li data-type="modification">Réfection des menus des commandes /issues, /m et /régime.</li>
+                                <li data-type="ajout">Ajout de plus de détails dans !ping.</li>
+                                <li data-type="ajout">Ajout d'un message d'alerte au redémarrage du bot.</li>
+                                <li data-type="modification">Modifications mineures dans les textes des commandes /z, !r et /rp.</li>
+                                <li data-type="correction">Correction de bugs et amélioration de la stabilité.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="major" id="version-1" aria-labelledby="version-1-title">
+                    <h2 class="major-title" id="version-1-title">Version 1 <small>Les débuts</small></h2>
+                    <p class="major-desc">La toute première version de WolfBot.</p>
+                    <div class="timeline">
+                        <article class="release" id="v1-0-0">
+                            <header class="release-head">
+                                <h3><a href="#v1-0-0">V1.0.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Création de WolfBot.</li>
+                                <li data-type="ajout">Création des commandes /z, /rp, /issues, /sorcière, /régime, !r, !ping, /m et /rage.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <div class="card empty-state" id="empty" hidden>
+                    <span class="big" aria-hidden="true">🐺</span>
+                    Aucun changement ne correspond à votre recherche.
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2024–<span data-year>2026</span> WolfBot · Créé par BryanStarship. Non affilié à Discord ni à Crownicles.</p>
+            <nav aria-label="Liens du pied de page">
+                <a href="./">Accueil</a>
+                <a href="2.html">Conditions d'utilisation</a>
+                <a href="1.html">Confidentialité</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+            var releases = Array.prototype.slice.call(document.querySelectorAll('.release'));
+            var majors = Array.prototype.slice.call(document.querySelectorAll('.major'));
+            var items = Array.prototype.slice.call(document.querySelectorAll('.release li'));
+            var empty = document.getElementById('empty');
+            var search = document.getElementById('search');
+            var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+            var index = document.getElementById('version-index');
+            var currentType = 'all';
+
+            // Texte d'origine de chaque ligne, pour pouvoir surligner puis restaurer
+            items.forEach(function (li) { li.dataset.text = li.textContent; });
+
+            // --- Statistiques et badge « Dernière version » ---
+            if (releases.length) {
+                var latest = releases[0];
+                latest.classList.add('is-latest');
+                var badge = document.createElement('span');
+                badge.className = 'badge-latest';
+                badge.textContent = 'Dernière version';
+                latest.querySelector('h3').after(badge);
+                document.querySelector('[data-stat="latest"]').textContent = latest.querySelector('h3').textContent.trim();
+            }
+            document.querySelector('[data-stat="count"]').textContent = releases.length;
+            document.querySelector('[data-stat="changes"]').textContent = items.length;
+
+            // --- Index des versions (barre latérale) ---
+            var indexLinks = {};
+            var indexGroups = [];
+            majors.forEach(function (major) {
+                var group = document.createElement('div');
+                var title = document.createElement('h2');
+                title.textContent = major.querySelector('.major-title').firstChild.textContent.trim();
+                var list = document.createElement('ul');
+                major.querySelectorAll('.release').forEach(function (rel) {
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.href = '#' + rel.id;
+                    a.textContent = rel.querySelector('h3').textContent.trim();
+                    li.appendChild(a);
+                    list.appendChild(li);
+                    indexLinks[rel.id] = li;
+                });
+                group.appendChild(title);
+                group.appendChild(list);
+                index.appendChild(group);
+                indexGroups.push({ group: group, major: major });
+            });
+
+            // Version visible surlignée dans l'index
+            if ('IntersectionObserver' in window) {
+                var active = null;
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (!entry.isIntersecting) return;
+                        var li = indexLinks[entry.target.id];
+                        if (!li) return;
+                        if (active) active.classList.remove('is-active');
+                        active = li.firstChild;
+                        active.classList.add('is-active');
+                    });
+                }, { rootMargin: '-35% 0px -60% 0px' });
+                releases.forEach(function (rel) { observer.observe(rel); });
+            }
+
+            // --- Recherche et filtres ---
+            function escapeHtml(s) {
+                return s.replace(/[&<>"']/g, function (c) {
+                    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+                });
+            }
+            function normalize(s) {
+                return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+            }
+            function highlight(li, query) {
+                var text = li.dataset.text;
+                if (!query) { li.textContent = text; return; }
+                // Correspondance insensible aux accents : on travaille sur le texte normalisé
+                // (même longueur que l'original pour les caractères latins usuels).
+                var norm = normalize(text);
+                var out = '', pos = 0, i;
+                while ((i = norm.indexOf(query, pos)) !== -1) {
+                    out += escapeHtml(text.slice(pos, i)) + '<mark>' + escapeHtml(text.slice(i, i + query.length)) + '</mark>';
+                    pos = i + query.length;
+                }
+                li.innerHTML = out + escapeHtml(text.slice(pos));
+            }
+
+            function apply() {
+                var query = normalize(search.value.trim());
+                var anyVisible = false;
+
+                releases.forEach(function (rel) {
+                    var version = normalize(rel.querySelector('h3').textContent);
+                    var versionMatch = query && version.indexOf(query) !== -1;
+                    var visibleItems = 0;
+                    rel.querySelectorAll('li').forEach(function (li) {
+                        var typeOk = currentType === 'all' || li.dataset.type === currentType;
+                        var textOk = !query || versionMatch || normalize(li.dataset.text).indexOf(query) !== -1;
+                        var show = typeOk && textOk;
+                        li.hidden = !show;
+                        highlight(li, show && !versionMatch ? query : '');
+                        if (show) visibleItems++;
+                    });
+                    rel.hidden = visibleItems === 0;
+                    if (indexLinks[rel.id]) indexLinks[rel.id].hidden = rel.hidden;
+                    if (!rel.hidden) anyVisible = true;
+                });
+
+                majors.forEach(function (major) {
+                    major.hidden = !major.querySelector('.release:not([hidden])');
+                });
+                indexGroups.forEach(function (g) { g.group.hidden = g.major.hidden; });
+                empty.hidden = anyVisible;
+            }
+
+            search.addEventListener('input', apply);
+            chips.forEach(function (chip) {
+                chip.addEventListener('click', function () {
+                    currentType = chip.dataset.filter;
+                    chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+                    apply();
+                });
+            });
+        })();
+    </script>
 </body>
 </html>
