@@ -427,12 +427,22 @@ code, kbd {
 .latest-label { font-size: 0.8rem; color: var(--text-faint); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
 .latest-title { font-weight: 700; }
 .latest-title .ver { color: var(--accent); font-family: var(--font-mono); }
+.latest-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
 .latest-summary {
+    /* Résumé limité à 2 lignes : la première ligne d'une version peut être très longue */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
     color: var(--text-muted);
     font-size: 0.92rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.5;
 }
 .latest-arrow { color: var(--text-faint); font-size: 1.2rem; }
 
