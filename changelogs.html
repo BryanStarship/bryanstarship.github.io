@@ -87,6 +87,19 @@
                     <h2 class="major-title" id="version-3-title">Version 3 <small>Le menu /wolfbot</small></h2>
                     <p class="major-desc">Refonte autour du menu principal /wolfbot et des données du jeu Crownicles. Les versions annoncées 3.6.5 à 3.6.15 ont été renumérotées 3.7.0 à 3.7.8&nbsp;: l'ajout du ferrailleur ouvrait en réalité la version 3.7.</p>
                     <div class="timeline">
+                        <article class="release" id="v3-11-0">
+                            <header class="release-head">
+                                <h3><a href="#v3-11-0">V3.11.0</a></h3>
+                            </header>
+                            <ul>
+                                <li data-type="ajout">Assistance&nbsp;: le «&nbsp;🔔 Suivi automatique&nbsp;», désormais aussi dans l'accueil de l'Assistance, met vos informations à jour tout seul quand vous utilisez /profile, /inventory (chaque onglet que vous ouvrez) ou la réserve de plantes du jardin. Plus besoin de lier vos messages. Un /profile ou un /inventory d'un autre joueur est ignoré. «&nbsp;Voir mes informations&nbsp;» et «&nbsp;Que puis-je cuisiner ?&nbsp;» indiquent quand chaque donnée a été mise à jour.</li>
+                                <li data-type="ajout">Rage&nbsp;: face à un animal enragé sur une île, faites un clic droit sur le message de la rencontre (Applications → «&nbsp;WolfBot&nbsp;»)&nbsp;: WolfBot calcule vos chances de réussite pour chaque action proposée et vous dit laquelle choisir, d'après l'animal et vos données (profil, inventaire, familier). Le bouton «&nbsp;✏️ Préciser mes infos&nbsp;» complète ce que le jeu n'affiche pas&nbsp;: niveau et stocks de votre guilde, gaucher ou droitier, membres de votre guilde sur l'île. Avec le suivi automatique, WolfBot compte aussi votre rage, que le jeu n'affiche jamais.</li>
+                                <li data-type="modification">Assistance&nbsp;: «&nbsp;Que puis-je cuisiner ?&nbsp;» et les recettes suivies comptent aussi les plantes que vous transportez (onglet Plantes de /inventory), que le jeu utilise en cuisine comme celles de la réserve. Relancez /profile et /inventory (onglets Équipement et Réserve) une fois pour que WolfBot lise les nouvelles données.</li>
+                                <li data-type="correction">Assistance&nbsp;: une seule armure en réserve n'était pas reconnue, et les emplacements vides de la réserve étaient pris pour des objets.</li>
+                                <li data-type="correction">Rage (/wolfbot → Îles)&nbsp;: «&nbsp;Crier&nbsp;» était inversé (40&nbsp;% face à une femelle, 60&nbsp;% face à un mâle), et les descriptions des actions ont été revues d'après le jeu.</li>
+                            </ul>
+                        </article>
+
                         <article class="release" id="v3-10-1">
                             <header class="release-head">
                                 <h3><a href="#v3-10-1">V3.10.1</a></h3>
