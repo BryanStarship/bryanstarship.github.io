@@ -504,7 +504,7 @@ code, kbd {
 }
 .command + .command { border-top: 1px solid var(--border); }
 .command-names { display: flex; flex-wrap: wrap; gap: 6px; }
-.command code {
+.command-names code {
     padding: 3px 9px;
     border-radius: 7px;
     background: var(--surface-2);
