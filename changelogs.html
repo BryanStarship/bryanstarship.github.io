@@ -103,13 +103,13 @@
                             </header>
                             <ul>
                                 <li data-type="modification">WolfBot est à jour avec Crownicles 6.2.1.</li>
-                                <li data-type="modification">Recettes&nbsp;: la Mousse lunaire et le Champignon nocturne ne dépendent plus de la lune. Il faut au choix un familier volant (pour la mousse) ou nocturne (pour le champignon), une nuit à l'auberge dans les dernières 24&nbsp;h, ou une rencontre de nuit. Chaque fiche de graine rappelle que Théobald vient forcément au 4ᵉ mini-événement d'un trajet de forêt si vous remplissez les conditions de votre graine suivante. Sinon, il vous dit ce qui manque et vous offre une plante ou un matériau.</li>
-                                <li data-type="modification">Carte, Personnages&nbsp;: les fiches de Théobald, Talvar et Velanna indiquent quand ils viennent forcément au 4ᵉ mini-événement d'un trajet (au plus un par trajet).</li>
-                                <li data-type="modification">Bestiaire&nbsp;: la fiche d'un familier affiche ses particularités (🪽 Volant, 🦉 Nocturne, 🌊 Aquatique, 🔥 Feu). La recherche les trouve aussi&nbsp;: tapez «&nbsp;nocturne&nbsp;» pour voir les 13 familiers nocturnes.</li>
-                                <li data-type="modification">Événements&nbsp;: dans l'Escalier, «&nbsp;Renoncer à l'ascension&nbsp;» peut maintenant rapporter 200&nbsp;💰 et 162&nbsp;XP. Les textes de deux événements sont à jour.</li>
-                                <li data-type="correction">Combats&nbsp;: les gardes du roi ont maintenant un prénom (par exemple «&nbsp;Garde Hildegarde&nbsp;»). WolfBot continue de compter vos combats contre eux.</li>
-                                <li data-type="correction">Rage&nbsp;: le bonus de +20&nbsp;% de «&nbsp;Prier Dieu&nbsp;» va maintenant aux classes sacrées (Piquier, Chevalier, Paladin, Chevalier valeureux et Paladin lumineux), comme dans le jeu depuis Crownicles 6.2.1.</li>
-                                <li data-type="suppression">Rappels du jardin&nbsp;: le clic droit sur /jardin ne pose plus de rappels, car Crownicles vous prévient lui-même. Le message «&nbsp;toutes les plantes sont prêtes&nbsp;» est activé d'office, celui pour chaque plante se règle dans /notifications. Les rappels déjà posés partiront quand même.</li>
+                                <li data-type="modification">Recettes&nbsp;: la Mousse lunaire et le Champignon nocturne ne dépendent plus de la lune.</li>
+                                <li data-type="modification">Carte, Personnages&nbsp;: Théobald, Talvar et Velanna peuvent être garantis au 4ᵉ mini-événement d'un trajet.</li>
+                                <li data-type="modification">Bestiaire&nbsp;: particularités des familiers (volant, nocturne…) affichées et cherchables.</li>
+                                <li data-type="modification">Événements&nbsp;: «&nbsp;Renoncer à l'ascension&nbsp;» (Escalier) peut rapporter 200&nbsp;💰 et 162&nbsp;XP.</li>
+                                <li data-type="correction">Combats&nbsp;: les gardes du roi, désormais nommés, sont toujours comptés.</li>
+                                <li data-type="correction">Rage&nbsp;: le bonus de «&nbsp;Prier Dieu&nbsp;» va aux classes sacrées, comme dans le jeu.</li>
+                                <li data-type="suppression">Rappels du jardin&nbsp;: retirés, Crownicles prévient lui-même (réglable dans /notifications).</li>
                             </ul>
                         </article>
 
@@ -118,7 +118,7 @@
                                 <h3><a href="#v3-13-1">V3.13.1</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Rappels du jardin&nbsp;: faites un clic droit (ou un appui long) sur votre message /jardin, puis Applications → WolfBot, pour poser un rappel par parcelle en train de pousser. Plus besoin de copier le lien du message. Refaire le clic droit plus tard met vos rappels à jour et retire ceux des parcelles récoltées. /rp ne sert plus qu'aux rappels personnalisés&nbsp;: son option «&nbsp;lien&nbsp;» disparaît.</li>
+                                <li data-type="modification">Rappels du jardin&nbsp;: clic droit sur /jardin (Applications → WolfBot) au lieu du lien dans /rp.</li>
                             </ul>
                         </article>
 
@@ -127,10 +127,10 @@
                                 <h3><a href="#v3-13-0">V3.13.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Suivi automatique&nbsp;: nouveau menu «&nbsp;🔔 Suivi automatique&nbsp;», dans /wolfbot. Chaque suivi s'active à part&nbsp;: profil et inventaire, fourneau, livre de recettes, rage et énergie sur les îles, combats. Si vous aviez déjà activé le suivi automatique, tout reste activé comme avant, et vos combats gardent leur réglage.</li>
-                                <li data-type="modification">Assistance, Livre de recettes et Combats&nbsp;: le bouton du suivi automatique ouvre maintenant ce menu, avec un retour vers l'écran d'où vous venez.</li>
-                                <li data-type="modification">Rage&nbsp;: avec le suivi «&nbsp;Rage et énergie&nbsp;», WolfBot retient votre énergie, vue dans vos rapports sur les îles et en bateau, et à la fin de vos combats. L'aide Rage s'en sert pour «&nbsp;Concentrer son énergie&nbsp;» et «&nbsp;Dernier effort&nbsp;», et indique d'où vient la valeur. Sans ce suivi, le clic droit sur un animal enragé vous explique comment l'activer.</li>
-                                <li data-type="correction">Rage&nbsp;: WolfBot reconnaît mieux votre pseudo à la fin d'un combat quand il contient un caractère comme «&nbsp;_&nbsp;» ou «&nbsp;*&nbsp;». Votre rage est remise à zéro à coup sûr quand elle explose.</li>
+                                <li data-type="ajout">Suivi automatique&nbsp;: nouveau menu «&nbsp;🔔 Suivi automatique&nbsp;» dans /wolfbot, avec un réglage par suivi.</li>
+                                <li data-type="modification">Assistance, Livre de recettes et Combats&nbsp;: le bouton du suivi ouvre ce nouveau menu.</li>
+                                <li data-type="modification">Rage&nbsp;: WolfBot retient votre énergie (rapports sur les îles, fins de combat) pour l'aide Rage.</li>
+                                <li data-type="correction">Rage&nbsp;: pseudos avec «&nbsp;_&nbsp;» ou «&nbsp;*&nbsp;» mieux reconnus en fin de combat.</li>
                             </ul>
                         </article>
 
@@ -139,11 +139,11 @@
                                 <h3><a href="#v3-12-5">V3.12.5</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">WolfBot est à jour avec Crownicles 6.2.0. Les textes officiels du jeu repris par WolfBot (descriptions des attaques, conseils de Sir Rowan…) sont ceux de la nouvelle version.</li>
-                                <li data-type="modification">Familiers&nbsp;: le mammouth, l'ours polaire, l'aigle et le requin affichent leur nouveau second pouvoir. Les fiches des familiers dont le pouvoir a changé sont à jour (morsure, contre-attaque, corne, diplodocus, canard écarlate, jack-o'-lantern).</li>
-                                <li data-type="modification">Bestiaire&nbsp;: nouveau bouton «&nbsp;🔍 Rechercher&nbsp;» pour trouver un familier par son nom ou son pouvoir, sans parcourir les raretés une par une. Les résultats indiquent la rareté de chaque familier.</li>
-                                <li data-type="modification">Recettes&nbsp;: la fiche d'une recette indique qu'elle peut aussi devenir une spécialité du chef, à partir du niveau 81 de cuisine. Les potions de temps rappellent la limite de 30 par semaine, sur leur fiche et dans «&nbsp;Que puis-je cuisiner&nbsp;?&nbsp;». À partir du niveau 81 de cuisine, «&nbsp;Que puis-je cuisiner&nbsp;?&nbsp;» explique aussi les spécialités.</li>
-                                <li data-type="correction">Familiers&nbsp;: la fiche du kangourou et du gorille indiquait 15&nbsp;% de chance d'échouer, alors qu'ils ne ripostaient que dans 15&nbsp;% des cas. Depuis Crownicles 6.2.0, ils ripostent une fois sur deux. La fiche du jack-o'-lantern précise que seul le Mage mystique résiste à la pétrification.</li>
+                                <li data-type="modification">WolfBot est à jour avec Crownicles 6.2.0.</li>
+                                <li data-type="modification">Familiers&nbsp;: nouveaux seconds pouvoirs et pouvoirs modifiés à jour.</li>
+                                <li data-type="modification">Bestiaire&nbsp;: nouveau bouton «&nbsp;🔍 Rechercher&nbsp;» par nom ou par pouvoir.</li>
+                                <li data-type="modification">Recettes&nbsp;: spécialités du chef (cuisine niveau 81) et limite de 30 potions de temps par semaine.</li>
+                                <li data-type="correction">Familiers&nbsp;: chances du kangourou et du gorille corrigées, précision sur le jack-o'-lantern.</li>
                             </ul>
                         </article>
 
@@ -152,7 +152,7 @@
                                 <h3><a href="#v3-12-4">V3.12.4</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Missions&nbsp;: clic droit (ou appui long) sur votre /missions, puis Applications → WolfBot, pour voir ce que rapporte chaque mission en cours (campagne, quotidienne et secondaires) et le total si vous terminez tout. Le jeu n'affiche pas la difficulté d'une mission&nbsp;: quand plusieurs récompenses restent possibles, WolfBot les indique toutes et donne une fourchette dans le total. Les montants ne comptent pas les bénédictions actives.</li>
+                                <li data-type="modification">Missions&nbsp;: clic droit sur /missions (Applications → WolfBot) pour voir les récompenses en cours.</li>
                                 <li data-type="correction">Guide des Missions&nbsp;: les récompenses de 10 missions quotidiennes avaient 1 point ou 1 pièce d'écart avec le jeu.</li>
                             </ul>
                         </article>
@@ -162,7 +162,7 @@
                                 <h3><a href="#v3-12-3">V3.12.3</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Carte&nbsp;: nouveau bouton «&nbsp;👥 Personnages&nbsp;» sur la carte et sur l'écran des destinations. Il indique où croiser chaque personnage&nbsp;: ceux qui n'apparaissent que sur certains trajets (Talvar, la fermière, Théobald le jardinier, la guérisseuse, le capitaine, Moltiar, l'homme aux gobelets), ceux qu'on croise partout sur le continent et ceux qu'on trouve en ville. Le menu ouvre la fiche d'un personnage, avec ses trajets, leur durée dans chaque sens et ses conditions. Les destinations affichent aussi 🧔 Talvar, 🥬 la fermière, 🌱 Théobald et 🩹 la guérisseuse quand on peut les croiser sur le trajet.</li>
+                                <li data-type="modification">Carte&nbsp;: nouveau bouton «&nbsp;👥 Personnages&nbsp;» qui indique où croiser chaque personnage.</li>
                             </ul>
                         </article>
 
@@ -171,7 +171,7 @@
                                 <h3><a href="#v3-12-2">V3.12.2</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Assistance&nbsp;: les recettes suivies ne s'affichent plus «&nbsp;Réalisable&nbsp;» quand vous ne les avez pas encore débloquées. Une recette bloquée affiche 🔒 et ce qu'il faut pour la débloquer (palier de cuisine, niveau, missions de campagne), même si vous avez déjà tous ses ingrédients. Si WolfBot ne peut pas savoir si vous l'avez débloquée, il le signale avec ❔. Une recette notée dans votre 📖 Livre de recettes reste réalisable.</li>
+                                <li data-type="correction">Assistance&nbsp;: une recette suivie pas encore débloquée affiche 🔒 au lieu de «&nbsp;Réalisable&nbsp;».</li>
                             </ul>
                         </article>
 
@@ -180,7 +180,7 @@
                                 <h3><a href="#v3-12-1">V3.12.1</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Assistance&nbsp;: avec le «&nbsp;🔔 Suivi automatique&nbsp;», WolfBot retire tout seul de votre stock ce que consomme le fourneau (le bois à l'allumage, les ingrédients d'une cuisson réussie ou ratée, sauf le matériau économisé grâce à votre palier) et ajoute les matériaux obtenus, sans attendre que vous rouvriez votre inventaire ou votre jardin. «&nbsp;Que puis-je cuisiner&nbsp;?&nbsp;» suit donc vos cuissons, et la ligne «&nbsp;Mis à jour&nbsp;» indique votre dernière cuisson prise en compte.</li>
+                                <li data-type="modification">Assistance&nbsp;: le suivi automatique déduit de votre stock ce que consomme le fourneau.</li>
                                 <li data-type="correction">Livre de recettes&nbsp;: avec le suivi automatique, les recettes que vous cuisinez sont bien notées comme connues.</li>
                             </ul>
                         </article>
@@ -190,7 +190,7 @@
                                 <h3><a href="#v3-12-0">V3.12.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Combats (/wolfbot → ⚔️ Combats)&nbsp;: activez le «&nbsp;🔔 Suivi des combats&nbsp;» (désactivé de base) et, après chacun de vos combats classés, contre un joueur ou un garde du roi, WolfBot répond dans le salon avec l'heure à laquelle votre énergie sera pleine pour le prochain combat (à 7&nbsp;min près), vos combats du jour face aux plafonds du jeu (argent&nbsp;: 5 primes de victoire de votre ligue par jour, nuls et défaites compris&nbsp;; points bonus des 3 premières victoires) et le récap de votre semaine de combat (argent, points et gloire gagnés). L'écran Combats reprend tout ça à tout moment, avec la semaine dernière et une page «&nbsp;📖 Règles&nbsp;». Les combats contre un monstre et les combats amicaux ne sont pas comptés, ni ceux faits hors des salons où WolfBot est présent.</li>
+                                <li data-type="ajout">Combats&nbsp;: nouveau module ⚔️ Combats (énergie pleine, plafonds du jour, récap de la semaine).</li>
                             </ul>
                         </article>
 
@@ -199,11 +199,11 @@
                                 <h3><a href="#v3-11-0">V3.11.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Assistance&nbsp;: le «&nbsp;🔔 Suivi automatique&nbsp;», désormais aussi dans l'accueil de l'Assistance, met vos informations à jour tout seul quand vous utilisez /profile, /inventory (chaque onglet que vous ouvrez) ou la réserve de plantes du jardin. Plus besoin de lier vos messages. Un /profile ou un /inventory d'un autre joueur est ignoré. «&nbsp;Voir mes informations&nbsp;» et «&nbsp;Que puis-je cuisiner ?&nbsp;» indiquent quand chaque donnée a été mise à jour.</li>
-                                <li data-type="ajout">Rage&nbsp;: face à un animal enragé sur une île, faites un clic droit sur le message de la rencontre (Applications → «&nbsp;WolfBot&nbsp;»)&nbsp;: WolfBot calcule vos chances de réussite pour chaque action proposée et vous dit laquelle choisir, d'après l'animal et vos données (profil, inventaire, familier). Le bouton «&nbsp;✏️ Préciser mes infos&nbsp;» complète ce que le jeu n'affiche pas&nbsp;: niveau et stocks de votre guilde, gaucher ou droitier, membres de votre guilde sur l'île. Avec le suivi automatique, WolfBot compte aussi votre rage, que le jeu n'affiche jamais.</li>
-                                <li data-type="modification">Assistance&nbsp;: «&nbsp;Que puis-je cuisiner ?&nbsp;» et les recettes suivies comptent aussi les plantes que vous transportez (onglet Plantes de /inventory), que le jeu utilise en cuisine comme celles de la réserve. Relancez /profile et /inventory (onglets Équipement et Réserve) une fois pour que WolfBot lise les nouvelles données.</li>
-                                <li data-type="correction">Assistance&nbsp;: une seule armure en réserve n'était pas reconnue, et les emplacements vides de la réserve étaient pris pour des objets.</li>
-                                <li data-type="correction">Rage (/wolfbot → Îles)&nbsp;: «&nbsp;Crier&nbsp;» était inversé (40&nbsp;% face à une femelle, 60&nbsp;% face à un mâle), et les descriptions des actions ont été revues d'après le jeu.</li>
+                                <li data-type="ajout">Assistance&nbsp;: le suivi automatique met à jour profil, inventaire et plantes tout seul.</li>
+                                <li data-type="ajout">Rage&nbsp;: clic droit sur un animal enragé pour savoir quelle action choisir.</li>
+                                <li data-type="modification">Assistance&nbsp;: les plantes transportées comptent dans «&nbsp;Que puis-je cuisiner&nbsp;?&nbsp;».</li>
+                                <li data-type="correction">Assistance&nbsp;: armure seule et emplacements vides de la réserve mieux lus.</li>
+                                <li data-type="correction">Rage&nbsp;: chances de «&nbsp;Crier&nbsp;» corrigées (elles étaient inversées).</li>
                             </ul>
                         </article>
 
@@ -212,7 +212,7 @@
                                 <h3><a href="#v3-10-1">V3.10.1</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Livre de recettes&nbsp;: un menu «&nbsp;Voir les recettes d'un thème&nbsp;» (potions de soin, friandises, alliages…) liste chaque recette avec ce que WolfBot en sait et, pour celles qui vous manquent, comment les obtenir&nbsp;: niveau ou missions de campagne à atteindre, place dans l'ordre du Fermier, de Gaspard Jo ou des boss d'île, prix, et choix de la Sorcière qui la donnent. Un second menu ouvre la fiche de la recette.</li>
+                                <li data-type="modification">Livre de recettes&nbsp;: liste par thème, avec comment obtenir les recettes qui manquent.</li>
                             </ul>
                         </article>
 
@@ -221,10 +221,10 @@
                                 <h3><a href="#v3-10-0">V3.10.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Assistance&nbsp;: nouveau «&nbsp;📖 Livre de recettes&nbsp;», qui retient les recettes que vous avez débloquées, ce que le jeu n'affiche nulle part. Activez «&nbsp;🔔 Suivi automatique&nbsp;»&nbsp;: à chaque allumage du fourneau, recette apprise ou offre du Fermier et de Gaspard Jo, WolfBot complète votre livre tout seul. Il déduit aussi celles que vous avez forcément d'après votre niveau, votre campagne, votre niveau de cuisine et l'ordre dans lequel le jeu les donne. Une source incomplète se complète à la main.</li>
-                                <li data-type="modification">Recettes&nbsp;: les listes marquent 🔒 les recettes pas encore débloquées et ❔ celles dont WolfBot n'est pas sûr. Chaque fiche indique ce que dit votre livre, avec un bouton «&nbsp;📖 Je la connais&nbsp;». «&nbsp;Que puis-je cuisiner ?&nbsp;» tient compte de votre livre.</li>
-                                <li data-type="modification">Clic droit&nbsp;: «&nbsp;Conseil Moltiar&nbsp;», «&nbsp;Conseil Expédition&nbsp;», «&nbsp;Conseil Sorcière&nbsp;» et «&nbsp;Conseil Événement&nbsp;» sont réunis en une seule commande, Applications → «&nbsp;WolfBot&nbsp;», qui reconnaît le message toute seule. Utilisée sur votre fourneau ou une recette apprise, elle ajoute les recettes à votre livre.</li>
-                                <li data-type="modification">Assistance&nbsp;: le Profil lié donne aussi votre avancée de campagne, utilisée par le livre de recettes. Reliez-le une fois pour en profiter.</li>
+                                <li data-type="ajout">Assistance&nbsp;: nouveau «&nbsp;📖 Livre de recettes&nbsp;» qui retient vos recettes débloquées.</li>
+                                <li data-type="modification">Recettes&nbsp;: 🔒 pour les recettes pas encore débloquées, ❔ si WolfBot n'est pas sûr.</li>
+                                <li data-type="modification">Clic droit&nbsp;: tous les «&nbsp;Conseil…&nbsp;» réunis en une seule commande, Applications → WolfBot.</li>
+                                <li data-type="modification">Assistance&nbsp;: le Profil lié donne aussi votre avancée de campagne.</li>
                             </ul>
                         </article>
 
@@ -233,7 +233,7 @@
                                 <h3><a href="#v3-9-7">V3.9.7</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Sorcière&nbsp;: les recettes débloquées sont maintenant indiquées précisément (nom et niveau, dans l'ordre du jeu), avec la condition d'obtenir une potion. «&nbsp;Laisser reposer la potion&nbsp;» débloque aussi une recette, ce qui n'était pas indiqué.</li>
+                                <li data-type="correction">Sorcière&nbsp;: recettes débloquées indiquées précisément, «&nbsp;Laisser reposer la potion&nbsp;» compris.</li>
                             </ul>
                         </article>
 
@@ -242,7 +242,7 @@
                                 <h3><a href="#v3-9-6">V3.9.6</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Expéditions, Sorcière et Événements&nbsp;: faites un clic droit sur le message du jeu (Applications → «&nbsp;Conseil Expédition&nbsp;», «&nbsp;Conseil Sorcière&nbsp;» ou «&nbsp;Conseil Événement&nbsp;») pour l'analyser directement, sans copier de lien ni chercher le lieu de l'événement. Comme pour Moltiar, le résultat est visible de tous.</li>
+                                <li data-type="modification">Expéditions, Sorcière et Événements&nbsp;: analyse par clic droit sur le message du jeu.</li>
                             </ul>
                         </article>
 
@@ -251,8 +251,8 @@
                                 <h3><a href="#v3-9-5">V3.9.5</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Moltiar&nbsp;: «&nbsp;Conseil Moltiar&nbsp;» (clic droit → Applications) reconnaît maintenant le message de la rencontre, qu'il disait à tort ne pas en être une.</li>
-                                <li data-type="modification">Moltiar&nbsp;: utilisé sur le message du résultat de la rencontre, WolfBot indique de prendre plutôt celui qui propose les 3 actions.</li>
+                                <li data-type="correction">Moltiar&nbsp;: le clic droit reconnaît mieux le message de la rencontre.</li>
+                                <li data-type="modification">Moltiar&nbsp;: sur le message du résultat, WolfBot indique d'utiliser celui de la rencontre.</li>
                             </ul>
                         </article>
 
@@ -261,9 +261,9 @@
                                 <h3><a href="#v3-9-4">V3.9.4</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Moltiar&nbsp;: faites un clic droit sur le message de la rencontre (Applications → «&nbsp;Conseil Moltiar&nbsp;»), ou donnez son lien avec le bouton «&nbsp;🔗 Analyser l'événement&nbsp;»&nbsp;: WolfBot reconnaît votre familier et les 3 actions proposées, et vous dit laquelle choisir d'après vos données. S'il lui manque une information, il l'indique.</li>
-                                <li data-type="modification">Assistance&nbsp;: le Profil lié donne maintenant votre défense et votre vitesse cumulées, utilisées pour Moltiar. Reliez-le une fois pour en profiter.</li>
-                                <li data-type="correction">Moltiar&nbsp;: les pertes d'amour affichées étaient surestimées d'environ un demi-point, et la vigueur était parfois mal arrondie.</li>
+                                <li data-type="modification">Moltiar&nbsp;: analyse par clic droit ou par lien, avec l'action conseillée.</li>
+                                <li data-type="modification">Assistance&nbsp;: le Profil lié donne aussi défense et vitesse, pour Moltiar.</li>
+                                <li data-type="correction">Moltiar&nbsp;: pertes d'amour et arrondi de la vigueur corrigés.</li>
                             </ul>
                         </article>
 
@@ -272,7 +272,7 @@
                                 <h3><a href="#v3-9-3">V3.9.3</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Assistance, «&nbsp;Que puis-je cuisiner ?&nbsp;»&nbsp;: nouveau bouton «&nbsp;🎯 Mon palier uniquement&nbsp;», qui masque les recettes trop hautes pour votre palier de cuisine (risque d'échec ou aucune XP). Il apparaît quand votre profil est lié.</li>
+                                <li data-type="modification">Assistance&nbsp;: bouton «&nbsp;🎯 Mon palier uniquement&nbsp;» dans «&nbsp;Que puis-je cuisiner&nbsp;?&nbsp;».</li>
                             </ul>
                         </article>
 
@@ -281,7 +281,7 @@
                                 <h3><a href="#v3-9-2">V3.9.2</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Assistance, «&nbsp;Que puis-je cuisiner ?&nbsp;»&nbsp;: un menu permet de filtrer les recettes par type (potions, nourriture pour familiers, matériaux, ou une catégorie précise), et un bouton change le tri (conseillé, plus d'XP ou niveau croissant). Le filtre et le tri sont conservés en revenant d'une fiche recette.</li>
+                                <li data-type="modification">Assistance&nbsp;: filtre par type et tri dans «&nbsp;Que puis-je cuisiner&nbsp;?&nbsp;».</li>
                             </ul>
                         </article>
 
@@ -290,8 +290,8 @@
                                 <h3><a href="#v3-9-1">V3.9.1</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Familiers, Expéditions et Matériaux&nbsp;: le terrain «&nbsp;Plaine&nbsp;» porte désormais le même nom que dans le jeu (au lieu de «&nbsp;Plaines&nbsp;»).</li>
-                                <li data-type="suppression">Suppression définitive des anciennes commandes /régime et !r, qui n'étaient plus disponibles&nbsp;: les régimes, la force, la vitesse et le délai de repas des familiers sont dans le module Familiers du menu /wolfbot, et le rappel de 9&nbsp;min&nbsp;45 dans /z.</li>
+                                <li data-type="correction">Familiers, Expéditions et Matériaux&nbsp;: «&nbsp;Plaine&nbsp;» au lieu de «&nbsp;Plaines&nbsp;», comme dans le jeu.</li>
+                                <li data-type="suppression">Anciennes commandes /régime et !r supprimées (remplacées par Familiers et /z).</li>
                             </ul>
                         </article>
 
@@ -300,8 +300,8 @@
                                 <h3><a href="#v3-9-0">V3.9.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Assistance&nbsp;: nouveau bouton «&nbsp;🍳 Que puis-je cuisiner ?&nbsp;», qui liste les recettes réalisables avec vos matériaux et plantes liés, en commençant par les plus sûres et les plus rentables en XP. Chaque recette indique le poste du fourneau qui peut la proposer, le risque d'échec et si elle doit d'abord être débloquée. Un onglet «&nbsp;Il vous manque peu&nbsp;» montre celles où il ne manque qu'un ingrédient.</li>
-                                <li data-type="modification">Recettes&nbsp;: chaque fiche indique les postes du fourneau qui peuvent proposer la recette et le niveau de maison nécessaire, ainsi que le niveau de joueur ou le nombre de missions de campagne qui la débloque.</li>
+                                <li data-type="ajout">Assistance&nbsp;: nouveau «&nbsp;🍳 Que puis-je cuisiner&nbsp;?&nbsp;» d'après vos matériaux et plantes.</li>
+                                <li data-type="modification">Recettes&nbsp;: postes du fourneau et conditions de déblocage sur chaque fiche.</li>
                             </ul>
                         </article>
 
@@ -310,7 +310,7 @@
                                 <h3><a href="#v3-8-2">V3.8.2</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Mises à jour du bot&nbsp;: l'annonce «&nbsp;Mise à jour imminente&nbsp;» liste désormais les nouveautés de la version qui arrive, reprises des changelogs, et les garde une fois la mise à jour terminée.</li>
+                                <li data-type="modification">Mises à jour&nbsp;: l'annonce «&nbsp;Mise à jour imminente&nbsp;» liste les nouveautés.</li>
                             </ul>
                         </article>
 
@@ -319,7 +319,7 @@
                                 <h3><a href="#v3-8-1">V3.8.1</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Recettes&nbsp;: un bouton «&nbsp;🔍 Rechercher&nbsp;» dans l'onglet Matériaux trouve la recette d'un matériau en tapant son nom (ou celui de la recette), sans ouvrir les catégories une par une. Si le matériau existe mais ne se fabrique pas en cuisine, la recherche l'indique.</li>
+                                <li data-type="modification">Recettes&nbsp;: bouton «&nbsp;🔍 Rechercher&nbsp;» dans l'onglet Matériaux.</li>
                             </ul>
                         </article>
 
@@ -328,7 +328,7 @@
                                 <h3><a href="#v3-8-0">V3.8.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Menu /wolfbot&nbsp;: nouveau bouton «&nbsp;⚙️ Personnaliser&nbsp;» pour choisir les modules affichés et leur ordre. Les réglages sont propres à chaque joueur et conservés d'une mise à jour à l'autre.</li>
+                                <li data-type="ajout">Menu /wolfbot&nbsp;: bouton «&nbsp;⚙️ Personnaliser&nbsp;» pour choisir et ranger ses modules.</li>
                                 <li data-type="modification">Menu /wolfbot&nbsp;: chaque page affiche jusqu'à 7 modules, donc les Familiers passent en page 1.</li>
                             </ul>
                         </article>
@@ -338,8 +338,8 @@
                                 <h3><a href="#v3-7-17">V3.7.17</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Missions&nbsp;: le bouton Missions du menu /wolfbot ouvre directement le sommaire des catégories. La campagne y devient la catégorie 28, à côté des autres, à la place de l'ancien choix «&nbsp;Campagne / Normales&nbsp;».</li>
-                                <li data-type="modification">Missions&nbsp;: dans les missions de durée de combat et d'expéditions dangereuses, les tours ou les risques possibles pour une même récompense sont réunis sur une seule ligne, par exemple «&nbsp;Gagner 1 combat d'au moins 20, 21 ou 22 tours&nbsp;».</li>
+                                <li data-type="modification">Missions&nbsp;: le bouton ouvre le sommaire, avec la campagne en catégorie 28.</li>
+                                <li data-type="modification">Missions&nbsp;: variantes réunies sur une ligne («&nbsp;20, 21 ou 22 tours&nbsp;»).</li>
                             </ul>
                         </article>
 
@@ -348,9 +348,9 @@
                                 <h3><a href="#v3-7-16">V3.7.16</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Missions&nbsp;: les missions de durée de combat affichent toutes les combinaisons possibles de combats et de tours. «&nbsp;Gagner 2 combats d'au moins 25 tours&nbsp;», par exemple, manquait.</li>
-                                <li data-type="modification">Missions&nbsp;: les missions de durée de combat et d'expéditions dangereuses sont rangées par difficulté, avec une courte explication. Les missions qui rapportent la même chose sont regroupées au-dessus de leurs récompenses, et l'explication indique comment reconnaître, dans /missions, une mission qui existe en plusieurs versions.</li>
-                                <li data-type="correction">Missions&nbsp;: les expéditions dangereuses difficiles affichent le risque Périlleux et le risque Désespéré pour chaque récompense, et les missions quotidiennes de trajets et de matériaux indiquent la bonne durée (2-3&nbsp;h) et la bonne rareté (Commun).</li>
+                                <li data-type="correction">Missions&nbsp;: toutes les combinaisons de combats et de tours sont affichées.</li>
+                                <li data-type="modification">Missions&nbsp;: missions de combat et d'expéditions dangereuses rangées par difficulté.</li>
+                                <li data-type="correction">Missions&nbsp;: risques, durées et raretés corrigés pour certaines missions.</li>
                             </ul>
                         </article>
 
@@ -359,10 +359,10 @@
                                 <h3><a href="#v3-7-15">V3.7.15</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Événements&nbsp;: les issues qui vous envoient vers un type de lieu (ville, forêt, rivière, route…) indiquent désormais la vraie destination et la durée du trajet, par exemple «&nbsp;Claire de Ville (1&nbsp;h)&nbsp;» dans le brouillard de la Route Grimpante.</li>
-                                <li data-type="modification">Événements&nbsp;: ajout du brouillard d'Halloween, qui peut survenir n'importe où sur le continent du 23&nbsp;octobre au 8&nbsp;novembre.</li>
-                                <li data-type="modification">Événements&nbsp;: Noël (invitation au château puis cadeaux) et le poisson d'avril sont désormais affichés comme les autres événements, avec tous leurs choix, leur période et les vraies récompenses.</li>
-                                <li data-type="modification">Événements&nbsp;: les récompenses précisent les gemmes, les points, la catégorie et la rareté minimale des objets et familiers obtenus, ainsi que l'événement qui suit une issue.</li>
+                                <li data-type="modification">Événements&nbsp;: vraie destination et durée des issues qui envoient vers un type de lieu.</li>
+                                <li data-type="modification">Événements&nbsp;: ajout du brouillard d'Halloween (23&nbsp;octobre – 8&nbsp;novembre).</li>
+                                <li data-type="modification">Événements&nbsp;: Noël et le poisson d'avril affichés comme les autres événements.</li>
+                                <li data-type="modification">Événements&nbsp;: récompenses plus détaillées (gemmes, points, rareté, événement suivant).</li>
                             </ul>
                         </article>
 
@@ -371,7 +371,7 @@
                                 <h3><a href="#v3-7-14">V3.7.14</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Mise à jour pour Crownicles 6.1.1&nbsp;: /carte affiche les nouveaux biomes de Boug-Coton, Claire de Ville, la Route des Merveilles, Bois Hurlant, le Chemin du Dédale, la Rivière aux Crabes, la Forêt Célestrum et la Cour du Château, et explique que chaque biome d'un lieu propose désormais sa propre expédition.</li>
+                                <li data-type="modification">Crownicles 6.1.1&nbsp;: nouveaux biomes dans /carte, une expédition par biome.</li>
                             </ul>
                         </article>
 
@@ -380,8 +380,8 @@
                                 <h3><a href="#v3-7-13">V3.7.13</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Mises à jour du bot&nbsp;: elles sont désormais annoncées 5&nbsp;minutes à l'avance, installées pendant une courte maintenance, puis suivies automatiquement de l'annonce de la nouvelle version. Le bot redémarre seul si la mise à jour l'exige.</li>
-                                <li data-type="modification">Mode maintenance&nbsp;: il bloque désormais toutes les commandes et tous les boutons du bot, pour tout le monde, sauf le panneau /admin.</li>
+                                <li data-type="modification">Mises à jour&nbsp;: annoncées 5&nbsp;min avant et installées pendant une courte maintenance.</li>
+                                <li data-type="modification">Maintenance&nbsp;: bloque toutes les commandes et tous les boutons, sauf /admin.</li>
                                 <li data-type="modification">Panneau d'administration&nbsp;: le numéro de version n'est plus saisi à la main, il est livré avec chaque mise à jour.</li>
                             </ul>
                         </article>
@@ -391,7 +391,7 @@
                                 <h3><a href="#v3-7-12">V3.7.12</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Panneau d'administration&nbsp;: nouveau bouton «&nbsp;Mettre à jour depuis GitHub&nbsp;», qui récupère le dernier code et recharge les modules sans redémarrer le bot.</li>
+                                <li data-type="modification">Admin&nbsp;: bouton «&nbsp;Mettre à jour depuis GitHub&nbsp;», sans redémarrer le bot.</li>
                             </ul>
                         </article>
 
@@ -400,8 +400,8 @@
                                 <h3><a href="#v3-7-11">V3.7.11</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Événements&nbsp;: les issues de la Maison hantée qui vous envoient sur un autre lieu indiquent la vraie destination et la durée du trajet, au lieu d'un «&nbsp;Lieu&nbsp;98&nbsp;» incompréhensible.</li>
-                                <li data-type="correction">Événements&nbsp;: les altérations d'état reprennent les mots du jeu (mal aux pieds, gelé, enfermé, confus, apeuré…), «&nbsp;gravement blessé&nbsp;» n'est plus confondu avec «&nbsp;blessé&nbsp;», et l'altération «&nbsp;empoissonné&nbsp;» du poisson d'avril s'affiche correctement.</li>
+                                <li data-type="correction">Événements&nbsp;: vraie destination des issues de la Maison hantée (au lieu de «&nbsp;Lieu&nbsp;98&nbsp;»).</li>
+                                <li data-type="correction">Événements&nbsp;: altérations d'état reprises du jeu et mieux distinguées.</li>
                             </ul>
                         </article>
 
@@ -410,15 +410,15 @@
                                 <h3><a href="#v3-7-10">V3.7.10</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Mise à jour pour Crownicles 6.1.0&nbsp;: /carte affiche les biomes de chaque lieu (un ou plusieurs), qui servent désormais aux expéditions comme au mini-événement «&nbsp;trouver un matériau&nbsp;».</li>
+                                <li data-type="modification">Crownicles 6.1.0&nbsp;: biomes de chaque lieu affichés dans /carte.</li>
                                 <li data-type="modification">Matériaux&nbsp;: nouveaux butins par biome (expéditions et mini-événement) et par boss, avec les chances recalculées.</li>
-                                <li data-type="modification">Îles&nbsp;: le butin dépend maintenant du boss affronté, et la Forêt de la pénombre présente ses deux boss séparément. Statistiques à jour&nbsp;: nouvelles attaques du Squelette, de l'Araignée, du Gardien céleste, du Titan de magma et de l'Élémentaire brillant, Léviathan rééquilibré.</li>
+                                <li data-type="modification">Îles&nbsp;: butin par boss et statistiques des boss à jour.</li>
                                 <li data-type="modification">Forge&nbsp;: ajout de la Sentence de la Faucheuse, nouvelle arme légendaire.</li>
                                 <li data-type="modification">Recettes&nbsp;: les recettes débloquées par le niveau de cuisine indiquent le palier requis.</li>
                                 <li data-type="modification">Enchanteur&nbsp;: désenchantement gratuit chez Mernil et transfert d'enchantement chez le forgeron, avec ses prix.</li>
                                 <li data-type="correction">Événements&nbsp;: l'Ermite propose de nouveau ses trois choix, «&nbsp;Continuer votre route&nbsp;» remplaçant le demi-tour.</li>
                                 <li data-type="correction">Sorcière&nbsp;: «&nbsp;Chanter une mélodie&nbsp;» ne rend plus ivre.</li>
-                                <li data-type="correction">Familiers&nbsp;: description corrigée pour «&nbsp;Brise l'armure&nbsp;» de l'Élan, qui retire les bonus de l'armure adverse au lieu de réduire sa défense et sa vitesse à 0.</li>
+                                <li data-type="correction">Familiers&nbsp;: description de «&nbsp;Brise l'armure&nbsp;» (Élan) corrigée.</li>
                                 <li data-type="correction">Les écrans rouverts par un bouton de retour désactivent de nouveau leurs boutons après 5 minutes d'inactivité.</li>
                             </ul>
                         </article>
@@ -428,12 +428,12 @@
                                 <h3><a href="#v3-7-9">V3.7.9</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Suivi automatique du statut de Discord&nbsp;: les incidents publiés sur discordstatus.com sont relayés dans un salon dédié, traduits en français.</li>
-                                <li data-type="modification">Expéditions&nbsp;: calculateur aligné sur le code de Crownicles 6.0.4 (pénalités calculées sur la durée réelle, maximum de jetons incluant le bonus aléatoire, arrondi des récompenses identique au jeu).</li>
+                                <li data-type="modification">Statut de Discord&nbsp;: incidents relayés dans un salon, traduits en français.</li>
+                                <li data-type="modification">Expéditions&nbsp;: calculateur aligné sur Crownicles 6.0.4.</li>
                                 <li data-type="modification">Les boutons de tous les écrans se désactivent après 5 minutes d'inactivité.</li>
                                 <li data-type="modification">/wolfbot retente automatiquement l'envoi du menu en cas de coupure réseau passagère.</li>
                                 <li data-type="correction">Correction d'un message d'erreur vide lorsque l'envoi du menu /wolfbot dépassait le délai réseau.</li>
-                                <li data-type="correction">Le bot ne relance plus sa séquence de démarrage (rechargement des modules, annonce de version) à chaque reconnexion à Discord.</li>
+                                <li data-type="correction">Le bot ne relance plus son démarrage à chaque reconnexion à Discord.</li>
                             </ul>
                         </article>
 
@@ -464,7 +464,7 @@
                                 <time datetime="2026-08-31">31 août 2026</time>
                             </header>
                             <ul>
-                                <li data-type="correction">Correction de certains événements (Crownicles 6.0.4)&nbsp;: les choix soumis à condition, comme « Repartir par où vous êtes venu » chez l'Ermite, indiquent désormais leur condition d'apparition.</li>
+                                <li data-type="correction">Événements&nbsp;: les choix soumis à condition l'indiquent (Crownicles 6.0.4).</li>
                             </ul>
                         </article>
 
@@ -474,7 +474,7 @@
                                 <time datetime="2026-08-31">31 août 2026</time>
                             </header>
                             <ul>
-                                <li data-type="modification">/rp propose une option « lien »&nbsp;: donnez le lien du message de votre jardin pour créer des rappels lorsque les plantes sont prêtes.</li>
+                                <li data-type="modification">/rp&nbsp;: option «&nbsp;lien&nbsp;» pour un rappel quand les plantes du jardin sont prêtes.</li>
                                 <li data-type="modification">/rp_manage affiche désormais tous vos rappels, 5 par page.</li>
                             </ul>
                         </article>
@@ -506,7 +506,7 @@
                                 <time datetime="2026-08-23">23 août 2026</time>
                             </header>
                             <ul>
-                                <li data-type="modification">Événements&nbsp;: un bouton « Rechercher » permet de trouver plus vite un lieu sans passer par le sommaire (qui reste disponible).</li>
+                                <li data-type="modification">Événements&nbsp;: bouton «&nbsp;Rechercher&nbsp;» pour trouver un lieu plus vite.</li>
                                 <li data-type="modification">Matériaux&nbsp;: un bouton « Toutes les sources » liste tous les équipements qui donnent le matériau choisi au ferraillage.</li>
                                 <li data-type="modification">Les messages de redémarrage et d'arrêt du bot ne sont plus visibles que par l'administrateur.</li>
                                 <li data-type="correction">Correction de l'erreur d'interaction lors du changement de version via /admin.</li>
@@ -519,7 +519,7 @@
                                 <time datetime="2026-08-23">23 août 2026</time>
                             </header>
                             <ul>
-                                <li data-type="modification">Matériaux&nbsp;: vous pouvez maintenant savoir quel est le meilleur équipement à ferrailler pour obtenir un matériau précis, et en quelle quantité.</li>
+                                <li data-type="modification">Matériaux&nbsp;: meilleur équipement à ferrailler pour obtenir un matériau précis.</li>
                                 <li data-type="modification">L'annonce de mise à jour n'est publiée que lorsque la version change réellement.</li>
                             </ul>
                         </article>
@@ -620,7 +620,7 @@
                                 <h3><a href="#v3-4-6">V3.4.6</a></h3>
                             </header>
                             <ul>
-                                <li data-type="correction">Correction d'un bug dans la quasi-totalité des commandes&nbsp;: lorsque le bot désactivait les boutons, toutes les manipulations de l'utilisateur étaient rejouées depuis le début.</li>
+                                <li data-type="correction">Boutons&nbsp;: vos actions ne sont plus rejouées quand le bot désactive les boutons.</li>
                             </ul>
                         </article>
 
@@ -629,7 +629,7 @@
                                 <h3><a href="#v3-4-5">V3.4.5</a></h3>
                             </header>
                             <ul>
-                                <li data-type="modification">Expéditions&nbsp;: WolfBot détecte maintenant automatiquement le familier depuis le message des expéditions (en cas d'erreur, le bouton de changement manuel reste disponible).</li>
+                                <li data-type="modification">Expéditions&nbsp;: familier détecté automatiquement depuis le message.</li>
                             </ul>
                         </article>
 
@@ -674,7 +674,7 @@
                                 <h3><a href="#v3-4-0">V3.4.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Expéditions&nbsp;: vous pouvez maintenant donner le message des trois expéditions à WolfBot pour choisir rapidement (option « Depuis un lien »).</li>
+                                <li data-type="ajout">Expéditions&nbsp;: analyse du message des trois expéditions (option «&nbsp;Depuis un lien&nbsp;»).</li>
                             </ul>
                         </article>
 
@@ -851,7 +851,7 @@
                                 <time datetime="2025-05-03">3 mai 2025</time>
                             </header>
                             <ul>
-                                <li data-type="correction">Correction d'un bug où le message « Création de la partie… Choisissez un mode de jeu » ne se supprimait pas au lancement d'une partie de Puissance 4.</li>
+                                <li data-type="correction">Puissance 4&nbsp;: le message «&nbsp;Création de la partie…&nbsp;» se supprime au lancement.</li>
                             </ul>
                         </article>
 
@@ -1025,7 +1025,7 @@
                                 <h3><a href="#v2-2-0">V2.2.0</a></h3>
                             </header>
                             <ul>
-                                <li data-type="ajout">Ajout d'un système d'enregistrement des rappels de la commande /rp, qui permet au bot d'exécuter les rappels même après un redémarrage.</li>
+                                <li data-type="ajout">Rappels /rp conservés après un redémarrage du bot.</li>
                             </ul>
                         </article>
 
